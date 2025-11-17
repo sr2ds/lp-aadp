@@ -1,0 +1,213 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Amazon Associates Dashboard Pro</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #FF9900;
+            border-bottom: 3px solid #FF9900;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #232F3E;
+            margin-top: 30px;
+        }
+        h3 {
+            color: #37475A;
+            margin-top: 20px;
+        }
+        .highlight {
+            background-color: #FFF3CD;
+            padding: 15px;
+            border-left: 4px solid #FF9900;
+            margin: 20px 0;
+        }
+        .contact {
+            background-color: #E7F3FF;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+        ul {
+            margin: 10px 0;
+        }
+        li {
+            margin: 8px 0;
+        }
+        .date {
+            color: #666;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Privacy Policy</h1>
+        <p class="date">Last Updated: November 11, 2025</p>
+
+        <div class="highlight">
+            <strong>TL;DR:</strong> We don't collect, store, or transmit ANY of your data. Everything stays 100% local in your browser. Zero tracking, zero servers, zero data collection.
+        </div>
+
+        <h2>1. Introduction</h2>
+        <p>
+            Amazon Associates Dashboard Pro ("the Extension") is a browser extension designed to help Amazon Associates affiliates monitor their sales data in real-time. This privacy policy explains how we handle (or rather, don't handle) your data.
+        </p>
+
+        <h2>2. Data Collection</h2>
+        <h3>What We DON'T Collect:</h3>
+        <ul>
+            <li>❌ Personal information</li>
+            <li>❌ Sales data or earnings information</li>
+            <li>❌ Amazon account credentials</li>
+            <li>❌ Browsing history</li>
+            <li>❌ Analytics or usage statistics</li>
+            <li>❌ IP addresses</li>
+            <li>❌ Cookies (except reading existing Amazon cookies for authentication)</li>
+            <li>❌ ANY data whatsoever</li>
+        </ul>
+
+        <h3>What We DO Store (Locally Only):</h3>
+        <ul>
+            <li>✅ Cached sales data (stored in YOUR browser's local storage)</li>
+            <li>✅ PRO license key (stored in YOUR browser's local storage)</li>
+            <li>✅ User preferences and settings (stored in YOUR browser's local storage)</li>
+        </ul>
+
+        <p><strong>Important:</strong> All data is stored locally using Chrome's Storage API. Nothing is ever transmitted to our servers because <strong>we don't have any servers</strong>.</p>
+
+        <h2>3. How The Extension Works</h2>
+        <p>The extension operates entirely within your browser:</p>
+        <ol>
+            <li>You visit the Amazon Associates dashboard and log in with your own credentials</li>
+            <li>The extension captures authentication headers from your existing session</li>
+            <li>It uses these headers to make requests directly to Amazon's API on your behalf</li>
+            <li>Sales data is displayed in the extension popup and cached locally</li>
+            <li>Notifications are generated locally when new sales are detected</li>
+        </ol>
+        <p><strong>All communication happens directly between your browser and Amazon.</strong> We are not in the middle.</p>
+
+        <h2>4. Permissions Explained</h2>
+        <p>The extension requests the following permissions and here's exactly why:</p>
+
+        <h3>alarms</h3>
+        <p>Schedules automatic checks for new sales data every 15 minutes (configurable). No data is transmitted.</p>
+
+        <h3>notifications</h3>
+        <p>Displays browser notifications when new sales are detected. Notifications are generated locally.</p>
+
+        <h3>cookies</h3>
+        <p>Reads your existing Amazon Associates session cookies to authenticate API requests. We don't create, modify, or transmit cookies.</p>
+
+        <h3>storage</h3>
+        <p>Stores cached sales data, license key, and preferences in your browser's local storage. Data never leaves your device.</p>
+
+        <h3>scripting</h3>
+        <p>Injects scripts into Amazon Associates pages to intercept API requests and capture authentication headers. This is necessary to make authenticated requests to Amazon's API.</p>
+
+        <h3>tabs</h3>
+        <p>Manages browser tabs to open/refresh the Amazon Associates page when needed for authentication. Required for background data fetching.</p>
+
+        <h3>host_permissions (https://associados.amazon.com.br/*)</h3>
+        <p>Allows the extension to access only the Amazon Associates Brazil domain. This is the ONLY external domain the extension communicates with, and it's Amazon's official domain.</p>
+
+        <h2>5. Third-Party Services</h2>
+        <h3>Amazon Associates</h3>
+        <p>The extension communicates directly with Amazon's official API at <code>associados.amazon.com.br</code>. All requests are made using your existing authentication. We comply with Amazon Associates Terms of Service.</p>
+
+        <h3>Stripe (Payment Processing)</h3>
+        <p>For PRO license purchases, we use Stripe for payment processing. Stripe may collect payment information according to their privacy policy. We do not have access to your full credit card details.</p>
+
+        <h3>No Other Third Parties</h3>
+        <p>We don't use analytics services (Google Analytics, Mixpanel, etc.), tracking pixels, or any other third-party services.</p>
+
+        <h2>6. Data Security</h2>
+        <ul>
+            <li>All data is stored locally in your browser using Chrome's encrypted storage API</li>
+            <li>Communication with Amazon uses HTTPS encryption</li>
+            <li>No data is transmitted to our servers (we don't have any)</li>
+            <li>License keys are stored locally and only validated client-side (in V1 MVP)</li>
+        </ul>
+
+        <h2>7. Data Retention</h2>
+        <p>Data is retained locally in your browser until:</p>
+        <ul>
+            <li>You uninstall the extension</li>
+            <li>You clear your browser data</li>
+            <li>Cache expires (2 minutes for today's data, 30 minutes for historical data)</li>
+        </ul>
+        <p>We have no control over or access to this data.</p>
+
+        <h2>8. Your Rights</h2>
+        <p>Since we don't collect any data, there's nothing for us to:</p>
+        <ul>
+            <li>Access</li>
+            <li>Export</li>
+            <li>Delete</li>
+            <li>Modify</li>
+        </ul>
+        <p>You have complete control over all data by managing your browser's local storage.</p>
+
+        <h2>9. Children's Privacy</h2>
+        <p>The extension is intended for Amazon Associates affiliates who are 18+ years old. We don't knowingly collect data from anyone (including children) because we don't collect data at all.</p>
+
+        <h2>10. Changes to Privacy Policy</h2>
+        <p>We may update this privacy policy from time to time. Changes will be posted on this page with an updated "Last Updated" date. Major changes will be announced in the extension update notes.</p>
+
+        <h2>11. International Users</h2>
+        <p>Currently, the extension only supports Amazon Associates Brazil. Future versions will support additional countries. Regardless of region, our privacy-first approach remains the same: zero data collection.</p>
+
+        <h2>12. Open Source & Transparency</h2>
+        <p>We believe in transparency. The extension's code can be reviewed by examining the Chrome Web Store package. We have nothing to hide because we don't collect anything.</p>
+
+        <h2>13. Compliance</h2>
+        <ul>
+            <li><strong>GDPR:</strong> Not applicable - we don't process personal data</li>
+            <li><strong>CCPA:</strong> Not applicable - we don't collect or sell personal information</li>
+            <li><strong>LGPD (Brazil):</strong> Not applicable - we don't collect or process personal data</li>
+        </ul>
+
+        <div class="contact">
+            <h2>14. Contact Information</h2>
+            <p>If you have questions about this privacy policy or the extension:</p>
+            <ul>
+                <li>📧 <strong>Email:</strong> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="096d687f606d49686e60656c616c7b66276a6664276b7b">[email&#160;protected]</a></li>
+                <li>🌐 <strong>Website:</strong> agilehero.com.br</li>
+            </ul>
+        </div>
+
+        <hr style="margin: 40px 0; border: none; border-top: 1px solid #ddd;">
+
+        <h2>Summary in Plain English</h2>
+        <div class="highlight">
+            <p><strong>Your data is YOUR data.</strong></p>
+            <p>
+                This extension works like a personal assistant that lives in your browser. It helps you check your Amazon Associates dashboard automatically, but it never reports back to us. We literally cannot see your sales data, earnings, or any other information because it never leaves your browser.
+            </p>
+            <p>
+                Think of it like a calculator app on your phone - it does calculations for you, but the calculator company doesn't know what numbers you're crunching. Same principle here.
+            </p>
+            <p><strong>Privacy-first isn't a feature for us - it's the architecture.</strong></p>
+        </div>
+    </div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"c3e4c4b5a0154d76bc15b783cdcbb6d0","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
