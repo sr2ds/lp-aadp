@@ -5,7 +5,25 @@ const proPrice = document.getElementById('proPrice');
 const priceNote = document.getElementById('priceNote');
 const proPriceBtn = document.getElementById('proPriceBtn');
 
-const prices = {
+// Detect language from page
+const isEnglish = document.documentElement.lang === 'en';
+
+const prices = isEnglish ? {
+    monthly: {
+        amount: '1.99',
+        period: '/month',
+        note: '$19.99/year on annual plan',
+        btnText: 'Pre-Order PRO Monthly',
+        btnUrl: 'https://buy.stripe.com/3cI14o5uF9KxarL6Xj9k40d'
+    },
+    annual: {
+        amount: '19.99',
+        period: '/year',
+        note: 'Save 16% vs monthly',
+        btnText: 'Pre-Order PRO Annual',
+        btnUrl: 'https://buy.stripe.com/aFa8wQ8GRcWJarLgxT9k40e'
+    }
+} : {
     monthly: {
         amount: '9,90',
         period: '/mês',
@@ -280,3 +298,19 @@ function showEasterEgg() {
 console.log('%c🚀 Amazon Associates Dashboard Pro', 'font-size: 20px; font-weight: bold; color: #FF9900;');
 console.log('%cFeito com ❤️ para afiliados', 'font-size: 14px; color: #666;');
 console.log('%c💡 Dica: Tente o código Konami para um desconto especial...', 'font-size: 12px; color: #999; font-style: italic;');
+
+// Language Switcher
+document.addEventListener('DOMContentLoaded', () => {
+    const langOptions = document.querySelectorAll('.lang-option');
+    
+    langOptions.forEach(option => {
+        option.addEventListener('click', (e) => {
+            // Don't prevent default - we want the link to navigate
+            // Just add a smooth transition class
+            document.body.style.opacity = '0.95';
+            setTimeout(() => {
+                document.body.style.opacity = '1';
+            }, 150);
+        });
+    });
+});
