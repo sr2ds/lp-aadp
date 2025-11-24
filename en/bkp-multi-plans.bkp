@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Monitor your Amazon Associates earnings in real-time. Instant notifications, automatic data, and 100% private!">
+        content="Monitor your Amazon Associates earnings in real-time. Instant notifications, automatic data, and 100% private. Free forever!">
     <title>Amazon Associates Dashboard Pro
         - Monitor Your Sales in Real-Time</title>
     <link rel="stylesheet" href="../styles.css">
@@ -114,8 +114,8 @@
                     <div class="browser-content">
                         <div class="dashboard-preview">
                             <div class="preview-header">
-                                <h3>💰 Total Referred Sales</h3>
-                                <span class="preview-badge">Today</span>
+                                <h3>💰 Total Referred Sales Today</h3>
+                                <span class="preview-badge">Real-Time</span>
                             </div>
                             <div class="preview-amount">$247.83</div>
                             <div class="preview-items">12 items sold</div>
@@ -187,7 +187,7 @@
                 <div class="feature-card">
                     <!-- <div class="feature-icon">📊</div> -->
                     <h3>Complete Dashboard</h3>
-                    <p>See your sales from yesterday, this week, and this month.</p>
+                    <p>See your sales from yesterday, this week, and this month. Free forever!</p>
                 </div>
 
                 <div class="feature-card featured">
@@ -285,7 +285,7 @@
     <!-- Pricing Section -->
     <section id="pricing" class="pricing-section">
         <div class="container">
-            <h2 class="section-title">Exclusive Offer</h2>
+            <h2 class="section-title">Choose Your Plan</h2>
             <p class="section-subtitle"></p>
 
             <!-- Pre-launch Notice in Pricing -->
@@ -300,34 +300,94 @@
                 </div>
             </div>
 
-            <div class="pricing-grid" style="max-width: 450px; justify-content: center;">
-                <!-- Lifetime Plan -->
-                <div class="pricing-card featured">
-                    <div class="pricing-badge">LIMITED OFFER</div>
+            <div class="pricing-toggle">
+                <span class="toggle-label active" data-period="monthly">Monthly</span>
+                <label class="switch">
+                    <input type="checkbox" id="pricingToggle">
+                    <span class="slider"></span>
+                </label>
+                <span class="toggle-label" data-period="annual">
+                    Annual
+                    <span class="save-badge">Save 16%</span>
+                </span>
+            </div>
+
+            <div class="pricing-grid">
+                <!-- FREE Plan -->
+                <div class="pricing-card">
                     <div class="pricing-header">
-                        <h3>LIFETIME</h3>
+                        <h3>FREE</h3>
                         <div class="price">
                             <span class="price-currency">$</span>
-                            <span class="price-amount">19.90</span>
-                            <span class="price-period">/one-time</span>
+                            <span class="price-amount">0</span>
+                            <span class="price-period">/forever</span>
                         </div>
-                        <div class="price-note">Pay once, use forever</div>
                     </div>
                     <ul class="pricing-features">
-                        <li class="included highlight">✅ <strong>Real-time TODAY's sales</strong></li>
-                        <li class="included highlight">✅ <strong>Instant notifications</strong></li>
-                        <li class="included">✅ Complete Dashboard (Yesterday, Week, Month)</li>
-                        <li class="included">✅ Updates every 5 minutes</li>
-                        <li class="included">✅ Pinned tab mode</li>
-                        <li class="included">✅ 100% Private & Secure</li>
-                        <li class="included highlight">✅ <strong>Lifetime</strong> Access</li>
-                        <li class="included highlight">✅ VIP Support</li>
-                        <li class="included highlight">✅ Future updates included</li>
+                        <li class="included">✅ Sales dashboard</li>
+                        <li class="included">✅ <strong>Yesterday's</strong> data</li>
+                        <li class="included">✅ <strong>This week's</strong> data</li>
+                        <li class="included">✅ <strong>This month's</strong> data</li>
+                        <li class="included">✅ 100% private</li>
+                        <li class="included">✅ Automatic updates</li>
+                        <li class="not-included">❌ Today's data</li>
+                        <li class="not-included">❌ Instant notifications</li>
                     </ul>
-                    <a href="https://buy.stripe.com/4gM8wQ1epbSFczT81n9k40g" onclick="return gtag_report_conversion(this.href);" class="btn btn-primary btn-block">
-                        Get Lifetime Access
+                    <a href="https://chromewebstore.google.com/detail/amazon-associates-dashboa/lmgafbcblmllgldhgdadahodfaenonhi" onclick="return gtag_report_conversion(this.href);"
+                        target="_blank" class="btn btn-secondary btn-block">Install Free</a>
+                </div>
+
+                <!-- PRO Plan -->
+                <div class="pricing-card featured">
+                    <div class="pricing-badge">MOST POPULAR</div>
+                    <div class="pricing-header">
+                        <h3>PRO</h3>
+                        <div class="price" id="proPrice">
+                            <span class="price-currency">$</span>
+                            <span class="price-amount">1.99</span>
+                            <span class="price-period">/month</span>
+                        </div>
+                        <div class="price-note" id="priceNote">$19.99/year on annual plan</div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li class="included">✅ <strong>Everything in FREE</strong></li>
+                        <li class="included highlight">✅ <strong>TODAY's</strong> sales in real-time</li>
+                        <li class="included highlight">✅ Instant notifications</li>
+                        <li class="included highlight">✅ Updates every 5 minutes</li>
+                        <li class="included">✅ Pinned tab mode</li>
+                        <li class="included">✅ Priority support</li>
+                        <li class="included">✅ Early access to new countries</li>
+                    </ul>
+                    <a href="https://buy.stripe.com/3cI14o5uF9KxarL6Xj9k40d" onclick="return gtag_report_conversion(this.href);" class="btn btn-primary btn-block"
+                        id="proPriceBtn">
+                        Pre-Order PRO Monthly
                     </a>
-                    <p class="money-back">💰 7-day money-back guarantee</p>
+                    <p class="money-back">💰 Cancel anytime, no hassle</p>
+                </div>
+            </div>
+
+            <!-- Lifetime Deal Banner -->
+            <div class="lifetime-banner">
+                <div class="lifetime-content">
+                    <div class="lifetime-header">
+                        <div class="lifetime-title">Lifetime Deal</div>
+                        <div class="lifetime-price-tag">
+                            <span class="lifetime-amount">$49.99</span>
+                            <span class="lifetime-period">/one-time</span>
+                        </div>
+                    </div>
+
+                    <div class="lifetime-features-inline">
+                        <div class="lifetime-feature-dot">Everything in PRO</div>
+                        <div class="lifetime-feature-dot">Pay once, use forever</div>
+                        <div class="lifetime-feature-dot">VIP Support</div>
+                    </div>
+
+                    <div class="lifetime-cta">
+                        <a href="https://buy.stripe.com/bJeeVef5f9Kx1VfdlH9k40f" onclick="return gtag_report_conversion(this.href);" class="btn btn-primary">
+                            Get Lifetime Access
+                        </a>
+                    </div>
                 </div>
             </div>
 
@@ -412,7 +472,7 @@
                     <h3 class="faq-question">💰 How does payment work?</h3>
                     <p class="faq-answer">Payment is processed through Stripe (same platform as Shopify, Slack, etc).
                         After subscribing, you receive your license key. Paste it in the extension settings and you're
-                        done!</p>
+                        done! PRO is just $1.99/month or $19.99/year (save 16%).</p>
                 </div>
 
                 <div class="faq-item">
@@ -451,7 +511,7 @@
                         target="_blank" class="btn btn-primary btn-large">
                         Install Extension Free
                     </a>
-                    <a href="https://buy.stripe.com/4gM8wQ1epbSFczT81n9k40g" onclick="return gtag_report_conversion(this.href);" class="btn btn-secondary btn-large">
+                    <a href="https://buy.stripe.com/bJeeVef5f9Kx1VfdlH9k40f" onclick="return gtag_report_conversion(this.href);" class="btn btn-secondary btn-large">
                         Get PRO
                     </a>
                 </div>
@@ -464,6 +524,10 @@
                     <div class="cta-feature">
                         <span class="cta-icon">✅</span>
                         <span>100% private and secure</span>
+                    </div>
+                    <div class="cta-feature">
+                        <span class="cta-icon">✅</span>
+                        <span>Free forever</span>
                     </div>
                 </div>
 

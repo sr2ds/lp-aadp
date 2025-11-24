@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Monitore Comissões da Amazon Associados em tempo real. Notificações instantâneas, dados automáticos e 100% privado!">
+    <meta name="description" content="Monitore Comissões da Amazon Associados em tempo real. Notificações instantâneas, dados automáticos e 100% privado. Grátis para sempre!">
     <title>Amazon Associates Dashboard Pro - Monitore Comissões em Tempo Real</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -66,7 +66,7 @@ function gtag_report_conversion(url) {
         <div class="container hero-content">
             <div class="hero-text">
                 <h1 class="hero-title">
-                    Monitore Comissões da Amazon em Tempo Real!
+                    Comece a Monitorar Comissões da Amazon em Tempo Real!
                 </h1>
                 <p class="hero-subtitle">
                     Pule a adivinhação com o <strong>Amazon Associates Dashboard Pro</strong>. Receba notificações instantâneas para cada comissão e otimize suas campanhas com dados em tempo real.
@@ -104,8 +104,8 @@ function gtag_report_conversion(url) {
                     <div class="browser-content">
                         <div class="dashboard-preview">
                             <div class="preview-header">
-                                <h3>💰 Total de Vendas Indicadas</h3>
-                                <span class="preview-badge">Hoje</span>
+                                <h3>💰 Total de Vendas Indicadas Hoje</h3>
+                                <span class="preview-badge">Tempo Real</span>
                             </div>
                             <div class="preview-amount">R$ 247,83</div>
                             <div class="preview-items">12 itens vendidos</div>
@@ -169,7 +169,7 @@ function gtag_report_conversion(url) {
                 <div class="feature-card">
                     <!-- <div class="feature-icon">📊</div> -->
                     <h3>Dashboard Completo</h3>
-                    <p>Veja suas comissões de ontem, esta semana e este mês!</p>
+                    <p>Veja suas comissões de ontem, esta semana e este mês. Grátis para sempre!</p>
                 </div>
 
                 <div class="feature-card featured">
@@ -198,9 +198,8 @@ function gtag_report_conversion(url) {
                     <p>Instale e pronto! A extensão captura automaticamente seus dados da Amazon</p>
                 </div>
 
-                <div class="feature-card featured">
+                <div class="feature-card">
                     <!-- <div class="feature-icon">📌</div> -->
-                    <div class="feature-badge">PRO</div>
                     <h3>Modo Aba Pinnada</h3>
                     <p>Mantém uma aba fixa da Amazon aberta para verificações mais eficientes</p>
                 </div>
@@ -254,37 +253,95 @@ function gtag_report_conversion(url) {
     <!-- Pricing Section -->
     <section id="pricing" class="pricing-section">
         <div class="container">
-            <h2 class="section-title">Oferta Exclusiva</h2>
+            <h2 class="section-title">Escolha Seu Plano</h2>
             <p class="section-subtitle"></p>
 
-            <div class="pricing-grid" style="max-width: 450px; justify-content: center;">
-                <!-- Lifetime Plan -->
-                <div class="pricing-card featured">
-                    <div class="pricing-badge">OFERTA LIMITADA</div>
+            <div class="pricing-toggle">
+                <span class="toggle-label active" data-period="monthly">Mensal</span>
+                <label class="switch">
+                    <input type="checkbox" id="pricingToggle">
+                    <span class="slider"></span>
+                </label>
+                <span class="toggle-label" data-period="annual">
+                    Anual 
+                    <span class="save-badge">Economize 16%</span>
+                </span>
+            </div>
+
+            <div class="pricing-grid">
+                <!-- FREE Plan -->
+                <div class="pricing-card">
                     <div class="pricing-header">
-                        <h3>VITALÍCIO</h3>
+                        <h3>FREE</h3>
                         <div class="price">
                             <span class="price-currency">R$</span>
-                            <span class="price-amount">99,90</span>
-                            <span class="price-period">/única</span>
+                            <span class="price-amount">0</span>
+                            <span class="price-period">/sempre</span>
                         </div>
-                        <div class="price-note">Pague uma vez, use para sempre</div>
                     </div>
                     <ul class="pricing-features">
-                        <li class="included highlight">✅ <strong>Vendas de HOJE em tempo real</strong></li>
-                        <li class="included highlight">✅ <strong>Notificações instantâneas</strong></li>
-                        <li class="included">✅ Dashboard completo (Ontem, Semana, Mês)</li>
-                        <li class="included">✅ Atualizações a cada 5 minutos</li>
-                        <li class="included">✅ Modo aba pinnada</li>
-                        <li class="included">✅ 100% Privado e Seguro</li>
-                        <li class="included highlight">✅ Acesso <strong>Vitalício</strong></li>
-                        <li class="included highlight">✅ Suporte VIP</li>
-                        <li class="included highlight">✅ Atualizações futuras incluídas</li>
+                        <li class="included">✅ Dashboard de vendas</li>
+                        <li class="included">✅ Dados de <strong>ontem</strong></li>
+                        <li class="included">✅ Dados de <strong>esta semana</strong></li>
+                        <li class="included">✅ Dados de <strong>este mês</strong></li>
+                        <li class="included">✅ 100% privado</li>
+                        <li class="included">✅ Atualizações automáticas</li>
+                        <li class="not-included">❌ Dados de hoje</li>
+                        <li class="not-included">❌ Notificações instantâneas</li>
                     </ul>
-                    <a href="https://buy.stripe.com/4gM8wQ1epbSFczT81n9k40g" onclick="return gtag_report_conversion(this.href);" class="btn btn-primary btn-block">
-                        Garantir Acesso Vitalício
+                    <a href="https://chromewebstore.google.com/detail/amazon-associates-dashboa/lmgafbcblmllgldhgdadahodfaenonhi" onclick="return gtag_report_conversion(this.href);" target="_blank" class="btn btn-secondary btn-block">Instalar Grátis</a>
+                </div>
+
+                <!-- PRO Plan -->
+                <div class="pricing-card featured">
+                    <div class="pricing-badge">MAIS POPULAR</div>
+                    <div class="pricing-header">
+                        <h3>PRO</h3>
+                        <div class="price" id="proPrice">
+                            <span class="price-currency">R$</span>
+                            <span class="price-amount">9,90</span>
+                            <span class="price-period">/mês</span>
+                        </div>
+                        <div class="price-note" id="priceNote">Se fizer uma indicação a mais, já se pagou.</div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li class="included">✅ <strong>Tudo do FREE</strong></li>
+                        <li class="included highlight">✅ Vendas de <strong>HOJE</strong> em tempo real</li>
+                        <li class="included highlight">✅ Notificações instantâneas</li>
+                        <li class="included highlight">✅ Atualizações a cada 5 minutos</li>
+                        <li class="included">✅ Modo aba pinnada</li>
+                        <li class="included">✅ Suporte prioritário</li>
+                        <li class="included">✅ Acesso antecipado a novos países</li>
+                    </ul>
+                    <a href="https://buy.stripe.com/3cI14o5uF9KxarL6Xj9k40d" onclick="return gtag_report_conversion(this.href);" class="btn btn-primary btn-block" id="proPriceBtn">
+                        Assinar PRO Mensal
                     </a>
-                    <p class="money-back">💰 7 dias de garantia incondicional</p>
+                    <p class="money-back">💰 Cancele quando quiser, sem complicação</p>
+                </div>
+            </div>
+
+            <!-- Lifetime Deal Banner -->
+            <div class="lifetime-banner">
+                <div class="lifetime-content">
+                    <div class="lifetime-header">
+                        <div class="lifetime-title">Oferta Vitalícia</div>
+                        <div class="lifetime-price-tag">
+                            <span class="lifetime-amount">R$ 249,90</span>
+                            <span class="lifetime-period">/única</span>
+                        </div>
+                    </div>
+                    
+                    <div class="lifetime-features-inline">
+                        <div class="lifetime-feature-dot">Tudo do PRO</div>
+                        <div class="lifetime-feature-dot">Pague uma vez, use para sempre</div>
+                        <div class="lifetime-feature-dot">Suporte VIP</div>
+                    </div>
+                    
+                    <div class="lifetime-cta">
+                        <a href="https://buy.stripe.com/bJeeVef5f9Kx1VfdlH9k40f" onclick="return gtag_report_conversion(this.href);" class="btn btn-primary">
+                            Garantir Acesso Vitalício
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -322,7 +379,7 @@ function gtag_report_conversion(url) {
 
                 <div class="testimonial">
                     <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
-                    <p class="testimonial-text">"99 reais para ter dados em tempo real e notificações é praticamente de graça! Vale cada centavo!"</p>
+                    <p class="testimonial-text">"Por R$ 9,90/mês ter dados em tempo real e notificações é um no-brainer. Vale cada centavo!"</p>
                     <div class="testimonial-author">
                         <div class="author-avatar">R</div>
                         <div class="author-info">
@@ -395,7 +452,7 @@ function gtag_report_conversion(url) {
                     <a href="https://chromewebstore.google.com/detail/amazon-associates-dashboa/lmgafbcblmllgldhgdadahodfaenonhi" onclick="return gtag_report_conversion(this.href);" target="_blank" class="btn btn-primary btn-large">
                         Instalar Extensão Grátis
                     </a>
-                    <a href="https://buy.stripe.com/4gM8wQ1epbSFczT81n9k40g" onclick="return gtag_report_conversion(this.href);" class="btn btn-secondary btn-large">
+                    <a href="https://buy.stripe.com/bJeeVef5f9Kx1VfdlH9k40f" onclick="return gtag_report_conversion(this.href);" class="btn btn-secondary btn-large">
                         Ir Direto para PRO
                     </a>
                 </div>
@@ -408,6 +465,10 @@ function gtag_report_conversion(url) {
                     <div class="cta-feature">
                         <span class="cta-icon">✅</span>
                         <span>100% privado e seguro</span>
+                    </div>
+                    <div class="cta-feature">
+                        <span class="cta-icon">✅</span>
+                        <span>Grátis para sempre</span>
                     </div>
                 </div>
 
